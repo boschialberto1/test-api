@@ -1,6 +1,7 @@
 {
     "name": "alberto/testapi",
     "description": "Description of project testapi.",
+    "version": "1.0",
     "authors": [
         {
             "name": "alberto boschi",
