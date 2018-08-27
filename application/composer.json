@@ -1,0 +1,15 @@
+{
+    "name": "test-api",
+    "description": "api Test",
+    "author": [
+        {
+                "name": "alberto boschi",
+                "email": "boschi.alberto1@gmail.com"
+        }
+    ],
+    "require": {
+    }
+    
+    
+    
+}
