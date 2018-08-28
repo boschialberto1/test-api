@@ -4,70 +4,37 @@ Test API CRUD user
 
 ### Installing
 
-Install testapi via composer: composer require alberto/testapi. testapi requires PHP >= 5.3.0.
+Install testapi via composer via command line: composer require alberto/testapi. testapi requires PHP >= 5.3.0.
 
 ```
-Give the example
+C:\Users\{username}\Documents>composer require alberto/testapi
 ```
 
-And repeat
+Or simply add to you composer.json "require" : { "alberto/testapi" : "*" }
 
 ```
-until finished
+"require": {
+        "alberto/testapi": "*"    
+},
 ```
+Point your virtualhost file to the folder /vendor/alberto/testapi
 
-End with an example of getting some data out of the system or using it for a little demo
+### Documentation
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+You will found API documentation at : http/https://yourdomain/documentation
 
 ```
 Give an example
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [Codeigniter](https://www.codeigniter.com/) - The web framework used
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Alberto Boschi** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
