@@ -33,7 +33,7 @@ Give an example
 
 ## Authors
 
-* **Alberto Boschi** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **[Alberto Boschi](http://www.albertoboschi.com)**
 
 ## License
 
