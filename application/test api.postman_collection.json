@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "17a19c31-69b8-4756-8845-839ef4276124",
+		"name": "test api",
+		"description": "new test api collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "edit user",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0902cc99-0a00-412f-bff3-b8c0b0c32a7e",
+						"type": "text/javascript",
+						"exec": [
+							"let reqs = pm.request.body.urlencoded;",
+							"var keys = Object.keys(reqs);",
+							"",
+							"keys.forEach(function(key) {",
+							"    var item = reqs[key];",
+							"    ",
+							"    if ( item['api_request'])",
+							"    {",
+							"            pm.globals.set(\"hmac\", CryptoJS.HmacSHA256(item['api_request'].value.toString(), 'sdh$tf%89Iadff?kfs2!').toString());",
+							"    }",
+							"",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "api_key",
+							"value": "api_test"
+						},
+						{
+							"key": "api_request",
+							"value": "{\"username\":\"rxvuzxjwsss4\",\"new_username\":\"46456456yy\"}",
+							"type": "text"
+						},
+						{
+							"key": "signature",
+							"value": "{{hmac}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/update",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "9b55eb14-ae71-4e46-b70c-e354d4925000",
+						"type": "text/javascript",
+						"exec": [
+							"let reqs = pm.request.body.urlencoded;",
+							"var keys = Object.keys(reqs);",
+							"",
+							"keys.forEach(function(key) {",
+							"    var item = reqs[key];",
+							"    ",
+							"    if ( item['api_request'])",
+							"    {",
+							"            pm.globals.set(\"hmac\", CryptoJS.HmacSHA256(item['api_request'].value.toString(), 'sdh$tf%89Iadff?kfs2!').toString());",
+							"    }",
+							"",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "api_key",
+							"value": "api_test"
+						},
+						{
+							"key": "api_request",
+							"value": "{\"username\":\"rxvuzxjwsss2\"}",
+							"type": "text"
+						},
+						{
+							"key": "signature",
+							"value": "{{hmac}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/update?",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"update"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "api_test",
+							"disabled": true
+						},
+						{
+							"key": "api_request",
+							"value": "{\"username\":\"rxvuzxjwsss2\"}",
+							"disabled": true
+						},
+						{
+							"key": "signature",
+							"value": "4ce54f665ce04cf4d10fd1de9c8124ec9e4a8891f1961141e44cba5a407ee878",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add user",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0f276118-5a51-4c89-974a-6c7ab35fd488",
+						"type": "text/javascript",
+						"exec": [
+							"let reqs = pm.request.body.urlencoded;",
+							"var keys = Object.keys(reqs);",
+							"",
+							"keys.forEach(function(key) {",
+							"    var item = reqs[key];",
+							"    ",
+							"    if ( item['api_request'])",
+							"    {",
+							"            pm.globals.set(\"hmac\", CryptoJS.HmacSHA256(item['api_request'].value.toString(), 'sdh$tf%89Iadff?kfs2!').toString());",
+							"    }",
+							"",
+							"});"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "b678dc91-7a6b-42c4-8b25-1e0e5cb50729",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "api_key",
+							"value": "api_test"
+						},
+						{
+							"key": "api_request",
+							"value": "{\"username\":\"rxvuzxjwsss4\"}",
+							"type": "text"
+						},
+						{
+							"key": "signature",
+							"value": "{{hmac}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/create?",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"create"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "api_test",
+							"disabled": true
+						},
+						{
+							"key": "api_request",
+							"value": "{\"username\":\"rxvuzxjwsss2\"}",
+							"disabled": true
+						},
+						{
+							"key": "signature",
+							"value": "4ce54f665ce04cf4d10fd1de9c8124ec9e4a8891f1961141e44cba5a407ee878",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
