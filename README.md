@@ -21,11 +21,8 @@ Point your virtualhost file to the folder /vendor/alberto/testapi
 
 ### Documentation
 
-You will found API documentation at : http/https://yourdomain/documentation
+You will found API documentation at : http/https:// yourdomain /documentation
 
-```
-Give an example
-```
 
 ## Built With
 
